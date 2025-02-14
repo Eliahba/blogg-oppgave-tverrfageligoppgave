@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hjelp - Min Blogg</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Hjelpeside</h1>
+        <nav>
+            <a href="index.php">Tilbake til bloggen</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Hvordan bruke bloggen?</h2>
+            <p>Denne bloggen lar deg lese og publisere innlegg enkelt.</p>
+            <ul>
+                <li>**For å lese innlegg:** Gå til forsiden, hvor alle innlegg vises.</li>
+                <li>**For å legge til et innlegg:** Fyll ut skjemaet på forsiden med en tittel og innhold.</li>
+                <li>**For å sende inn:** Trykk på knappen <strong>"Publiser"</strong>, og innlegget blir lagret i databasen.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Hva gjør knappene?</h2>
+            <table>
+                <tr>
+                    <th>Knapp</th>
+                    <th>Funksjon</th>
+                </tr>
+                <tr>
+                    <td><button class="help-button">Publiser</button></td>
+                    <td>Lagrer innlegget i databasen og viser det på bloggen.</td>
+                </tr>
+                <tr>
+                    <td><a href="index.php" class="help-link">Tilbake til bloggen</a></td>
+                    <td>Går tilbake til forsiden av bloggen.</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h2>Ofte stilte spørsmål (FAQ)</h2>
+            <button id="faq-toggle">Vis / Skjul FAQ</button>
+            <div id="faq-content" style="display: none;">
+                <p><strong>Hvorfor ser jeg ikke innlegget mitt?</strong><br>
+                   Prøv å laste siden på nytt eller vent noen sekunder. Hvis det fortsatt ikke vises, sjekk at du skrev inn all informasjon.</p>
+
+                <p><strong>Kan jeg slette eller redigere innlegg?</strong><br>
+                   Denne versjonen av bloggen støtter ikke sletting eller redigering av innlegg.</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="help.js"></script>
+</body>
+</html>
